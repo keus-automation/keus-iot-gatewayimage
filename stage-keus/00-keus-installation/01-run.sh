@@ -16,6 +16,8 @@ on_chroot << EOF
 
     cd /opt
     mkdir -p /opt/keus-iot-code
+
+    pm2 install pm2-logrotate
 EOF
 
 # install -v -m 777 files/keus-iot-code-node_modules.tar.gz "${ROOTFS_DIR}/opt/keus-iot-code/"

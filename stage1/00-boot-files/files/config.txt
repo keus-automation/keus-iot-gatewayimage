@@ -56,10 +56,20 @@
 # Enable audio (loads snd_bcm2835)
 dtparam=audio=on
 
-[pi4]
-# Enable DRM VC4 V3D driver on top of the dispmanx display stack
-dtoverlay=vc4-fkms-v3d
+# Enable hardware UART and 64 bit kernel
 max_framebuffers=2
+arm_64bit=1
 
-[all]
-#dtoverlay=vc4-fkms-v3d
+dtoverlay=pi3-miniuart-bt
+core_freq=250
+
+#enable uart
+enable_uart=1
+
+# [pi4]
+# Enable DRM VC4 V3D driver on top of the dispmanx display stack
+# dtoverlay=vc4-fkms-v3d
+# max_framebuffers=2
+
+# [all]
+# dtoverlay=vc4-fkms-v3d

@@ -99,8 +99,11 @@ run_stage(){
 	STAGE_WORK_DIR="${WORK_DIR}/${STAGE}"
 	ROOTFS_DIR="${STAGE_WORK_DIR}"/rootfs
 
+	echo "this is qcow2 "${USE_QCOW2}
+
 	if [ "${USE_QCOW2}" = "1" ]; then 
 		if [ ! -f SKIP ]; then
+			echo "loading images ============="
 			load_qimage
 		fi
 	else

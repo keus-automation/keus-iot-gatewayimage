@@ -7,3 +7,4 @@ SKIP_IMAGES
 .pc
 *-pc
 apt-cacher-ng/
+stage-keus/00-keus-installation/files/mongod

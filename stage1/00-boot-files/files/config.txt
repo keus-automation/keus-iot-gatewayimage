@@ -56,7 +56,13 @@
 # Enable audio (loads snd_bcm2835)
 dtparam=audio=on
 
-# Enable DRM VC4 V3D drive
-dtoverlay=vc4-kms-v3d
+# keus specific configs (enable hardware uart, switch bt to software uart, enable 64 bit)
 max_framebuffers=2
 arm_64bit=1
+
+dtoverlay=pi3-miniuart-bt
+core_freq=250
+
+#enable uart
+enable_uart=1
+

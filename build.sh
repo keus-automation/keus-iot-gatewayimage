@@ -224,6 +224,7 @@ export TIMEZONE_DEFAULT="${TIMEZONE_DEFAULT:-Europe/London}"
 export GIT_HASH=${GIT_HASH:-"$(git rev-parse HEAD)"}
 
 export PUBKEY_SSH_FIRST_USER
+export KEUS_MAIN_GATEWAY
 
 export CLEAN
 export IMG_NAME

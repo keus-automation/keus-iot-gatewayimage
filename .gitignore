@@ -7,3 +7,5 @@ SKIP_IMAGES
 .pc
 *-pc
 apt-cacher-ng/
+stage-keus/00-keus-installation/files/mongod
+stage-keus/00-keus-installation/files/keus-iot-code.tar.gz

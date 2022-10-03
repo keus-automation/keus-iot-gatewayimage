@@ -1,0 +1,4 @@
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/n/bin
+@reboot /opt/code-updater.sh > /opt/cronkeus.log 2>&1
+@reboot /opt/install-grpc-checker.sh > /opt/cronkeus.log 2>&1
+47 3 * * * /sbin/reboot > /opt/cronkeus.log 2>&1

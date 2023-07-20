@@ -30,6 +30,7 @@ EOF
 install -m 777 files/mongod "${ROOTFS_DIR}/opt/keus-iot-code/"
 install -m 777 files/mongodump "${ROOTFS_DIR}/opt/keus-iot-code/"
 install -m 777 files/mongorestore "${ROOTFS_DIR}/opt/keus-iot-code/"
+install -m 777 files/nats-server "${ROOTFS_DIR}/opt/keus-iot-code/"
 
 # wget -O redis-arm64-pi.tar.gz https://keus-resources.s3.ap-south-1.amazonaws.com/keus-iot-tools/redis-builds-pi64/redis-arm64-pi.tar.gz
 install -m 777 files/redis-arm64-pi.tar.gz "${ROOTFS_DIR}/opt/keus-iot-code/redis-bins/"
@@ -60,6 +61,7 @@ on_chroot << EOF
     chmod 777 /opt/keus-iot-code/mongodump
     chmod 777 /opt/keus-iot-code/mongorestore
     chmod 777 /opt/keus-iot-code/mongod
+    chmod 777 /opt/keus-iot-code/nats-server
     
     cd /opt/keus-iot-code/redis-bins/
     tar -xzvf redis-arm64-pi.tar.gz

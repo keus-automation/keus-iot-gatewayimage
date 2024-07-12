@@ -5,9 +5,8 @@ v4l-utils
 avahi-daemon
 lua5.1
 luajit
-hardlink ca-certificates curl
+ca-certificates curl
 fake-hwclock nfs-common usbutils
-libraspberrypi-dev libraspberrypi-doc libfreetype6-dev
 dosfstools
 dphys-swapfile
 raspberrypi-sys-mods
@@ -22,10 +21,13 @@ htop
 man-db
 policykit-1
 ssh-import-id
-rng-tools
 ethtool
-vl805fw
 ntfs-3g
 pciutils
 rpi-eeprom
-raspinfo
+raspi-utils
+udisks2
+unzip zip p7zip-full
+file
+kms++-utils
+python3-venv
